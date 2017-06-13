@@ -548,7 +548,7 @@ v5.2.14 (2017-01-23)
     </extension>
 </addon>
 
-<addon id="plugin.video.mdm4u" name="M4U" version="2.1.3" provider-name="Mucky Duck">
+<addon id="plugin.video.mdm4u" name="M4U" version="2.1.4" provider-name="Mucky Duck">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.metahandler" version="2.5.1"/>
@@ -749,7 +749,7 @@ provider-name="kodi senyor">
   </extension>
 </addon>
 
-<addon id="script.module.youtube.dl" name="youtube-dl Control" version="17.518.1" provider-name="Rick Phillips (ruuk)">
+<addon id="script.module.youtube.dl" name="youtube-dl Control" version="17.518.2" provider-name="Rick Phillips (ruuk)">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.addon.signals" version="0.0.1"/>
@@ -786,7 +786,7 @@ provider-name="kodi senyor">
   </extension>
 </addon>
 
-<addon id="plugin.video.md123movies" name="123Movies" version="2.1.1" provider-name="Mucky Duck">
+<addon id="plugin.video.md123movies" name="123Movies" version="2.1.3" provider-name="Mucky Duck">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.metahandler" version="2.5.1"/>
@@ -1322,7 +1322,7 @@ provider-name="kodi senyor">
   </extension>
 </addon>
 
-<addon id="script.mrknow.urlresolver" name="Mrknow URLResolver" version="2017.04.06.1" provider-name="mrknow" >
+<addon id="script.mrknow.urlresolver" name="Mrknow URLResolver" version="2017.06.11.1" provider-name="mrknow" >
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.six" />
@@ -1427,7 +1427,7 @@ provider-name="kodi senyor">
   </extension>
 </addon>
 
-<addon id="plugin.video.specto" name="Specto - ... Fork"  version="2017.04.27.1" provider-name="mrknow" >
+<addon id="plugin.video.specto" name="Specto - ... Fork"  version="2017.06.11.1" provider-name="mrknow" >
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.requests" />
@@ -2780,21 +2780,41 @@ provider-name="kodi senyor">
   </extension>
 </addon>
 
-<addon id="repository.exodus" version="1.0.1" name="Exodus repository" provider-name="Exodus">
+<addon id="repository.exodus" name="Exodus repository" version="2.0.0" provider-name="Exodus">
 	<extension point="xbmc.addon.repository" name="Exodus repository">
-		<dir>
-			<info compressed="false">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml</info>
-			<checksum>https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/zips/</datadir>
-		</dir>
+	<dir>
+		<info compressed="false">https://github.com/zqfaen/tva-common/raw/master/addons.xml</info>
+		<checksum>https://github.com/zqfaen/tva-common/raw/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/zqfaen/tva-common/raw/master/zips/</datadir>
+	</dir>
+
+    <dir>
+		<info compressed="false">https://github.com/nrwzum/freelance/raw/master/fun-stuff/addons.xml</info>
+		<checksum>https://github.com/nrwzum/freelance/raw/master/fun-stuff/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/nrwzum/freelance/raw/master/fun-stuff/</datadir>
+    </dir>
+    <dir>
+		<info compressed="false">https://github.com/bridgegirl/lonelycode/raw/master/puffpuffpass/addons.xml</info>
+		<checksum>https://github.com/bridgegirl/lonelycode/raw/master/puffpuffpass/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/bridgegirl/lonelycode/raw/master/puffpuffpass/</datadir>
+    </dir>
+    <dir>
+		<info compressed="false">https://github.com/bradonfire/winnerwinnerchickendinner/raw/master/reference-work/addons.xml</info>
+		<checksum>https://github.com/bradonfire/winnerwinnerchickendinner/raw/master/reference-work/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/bradonfire/winnerwinnerchickendinner/raw/master/reference-work/</datadir>
+    </dir>
+    <dir>
 		<info compressed="false">https://offshoregit.com/exodus/addons.xml</info>
 		<checksum>https://offshoregit.com/exodus/addons.xml.md5</checksum>
 		<datadir zip="true">https://offshoregit.com/exodus/</datadir>
+    </dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Exodus repository</summary>
 		<description lang="en">Exodus repository</description>
 		<platform>all</platform>
+		<forum>https://www.tvaddons.ag/forums</forum>
+        <website>https://www.tvaddons.ag</website>
 	</extension>
 </addon>
 
@@ -3162,7 +3182,7 @@ provider-name="kodi senyor">
   </extension>
 </addon>
 
-<addon id="plugin.video.exodus" version="3.1.14" name="Exodus" provider-name="Exodus">
+<addon id="plugin.video.exodus" version="3.1.15" name="Exodus" provider-name="Exodus">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="repository.exodus" version="1.0.0" />
@@ -3174,6 +3194,7 @@ provider-name="kodi senyor">
 	<extension point="xbmc.python.pluginsource" library="exodus.py">
 		<provides>video</provides>
 	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Exodus</summary>
 		<description lang="en">Please visit [COLOR blue]www.tvaddons.ag[/COLOR] for Exodus support and assistance! Kindly note that Exodus is not an official part of the media player you are running, and therefore not to be mentioned within official support channels, this addon has nothing to do with the media player itself, nor it’s intended use, it is simply a third party plugin which has been added to your system.</description>
@@ -3195,22 +3216,25 @@ provider-name="kodi senyor">
 		</assets>
 		<news>- Updated existing providers
 - Added and Updated German providers
-- Added Russian providers
-- Fixed issue with Trakt lists
-- Fixed issue with GoogleDoc-Links</news>
+- Removed dead providers
+- Fixed Russian providers
+- Added library integration
+- Fixed trakt watch/unwatched on seasons</news>
 	</extension>
 </addon>
 
-<addon id="repository.metalkettle" name="MetalKettles Addon Repository" version="1.7.1" provider-name="MetalKettle">
+<addon id="repository.metalkettle" name="MetalKettles Addon Repository" version="2.0.0" provider-name="MetalKettle">
 	<extension point="xbmc.addon.repository" name="MetalKettles Addon Repository">
 	<dir>
-		<info compressed="false">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml</info>
-		<checksum>https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/zips/</datadir>
+		<info compressed="false">https://raw.githubusercontent.com/MetalKettle/MK/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/MetalKettle/MK/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/MetalKettle/MK/master/zips/</datadir>
 	</dir>
-		<info compressed="false">http://offshoregit.com/metalkettle/addons.xml</info>
-		<checksum>http://offshoregit.com/metalkettle/addons.xml.md5</checksum>
-		<datadir zip="true">http://offshoregit.com/metalkettle/zips/</datadir>
+	<dir>
+		<info compressed="false">https://github.com/zqfaen/tva-common/raw/master/addons.xml</info>
+        	<checksum>https://github.com/zqfaen/tva-common/raw/master/addons.xml.md5</checksum>
+        	<datadir zip="true">https://github.com/zqfaen/tva-common/raw/master/zips/</datadir>
+	</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Install my Addons</summary>
@@ -3464,6 +3488,18 @@ unshortenit v0.3.0 from https://github.com/jkehler/unshortenit :
     <forum></forum>
     <source></source>
   </extension>
+</addon>
+
+<addon id="script.exodus.artwork" version="1.0.5" name="Exodus Artwork" provider-name="Exodus">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes for the Exodus Addon</summary>
+		<description>Themes for Exodus are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<platform>all</platform>
+	</extension>
 </addon>
 
 <addon id="plugin.video.he-trailers" name="Hebrew Trailers" version="1.0.3" provider-name="kodi senyor">
